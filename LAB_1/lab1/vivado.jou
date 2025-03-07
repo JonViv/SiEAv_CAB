@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Mar  4 17:03:14 2025
+# Process ID: 13128
+# Current directory: E:/CAB/LAB_1/lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3584 E:\CAB\LAB_1\lab1\lab1.xpr
+# Log file: E:/CAB/LAB_1/lab1/vivado.log
+# Journal file: E:/CAB/LAB_1/lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/CAB/LAB_1/lab1/lab1.xpr
+open_bd_design {E:/CAB/LAB_1/lab1/lab1.srcs/sources_1/bd/system/system.bd}
+update_compile_order -fileset sources_1
+write_hwdef -force  -file E:/CAB/LAB_1/lab1/lab1.sdk/system_wrapper.hdf
+launch_sdk -workspace E:/CAB/LAB_1/lab1/lab1.sdk -hwspec E:/CAB/LAB_1/lab1/lab1.sdk/system_wrapper.hdf
