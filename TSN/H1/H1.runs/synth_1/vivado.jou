@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Mar 25 17:34:36 2025
+# Process ID: 2388
+# Current directory: E:/CAB/TSN/H1/H1.runs/synth_1
+# Command line: vivado.exe -log adau1761_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source adau1761_test.tcl
+# Log file: E:/CAB/TSN/H1/H1.runs/synth_1/adau1761_test.vds
+# Journal file: E:/CAB/TSN/H1/H1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source adau1761_test.tcl -notrace

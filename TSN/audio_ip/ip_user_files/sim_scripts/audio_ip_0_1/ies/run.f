@@ -1,0 +1,16 @@
+-makelib ies_lib/xil_defaultlib \
+  "../../../../audio_ip_0_1/src/ADAU1761_interface.vhd" \
+  "../../../../audio_ip_0_1/src/adau1761_configuraiton_data.vhd" \
+  "../../../../audio_ip_0_1/src/adau1761_izedboard.vhd" \
+  "../../../../audio_ip_0_1/src/adau1761_test.vhd" \
+  "../../../../audio_ip_0_1/hdl/audio_ip_v1_0_S00_AXI.vhd" \
+  "../../../../audio_ip_0_1/src/clocking.vhd" \
+  "../../../../audio_ip_0_1/src/dsp_block.vhd" \
+  "../../../../audio_ip_0_1/src/i2c.vhd" \
+  "../../../../audio_ip_0_1/src/i2s_data_interface.vhd" \
+  "../../../../audio_ip_0_1/src/i3c2.vhd" \
+  "../../../../audio_ip_0_1/src/low_pass_moving_sum.vhd" \
+  "../../../../audio_ip_0_1/hdl/audio_ip_v1_0.vhd" \
+  "../../../../audio_ip_0_1/sim/audio_ip_0.vhd" \
+-endlib
+

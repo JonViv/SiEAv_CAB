@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Mar 21 15:15:04 2025
+# Process ID: 11164
+# Current directory: E:/CAB/LAB_3/lab3/led_ip/managed_ip_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5052 E:\CAB\LAB_3\lab3\led_ip\managed_ip_project\managed_ip_project.xpr
+# Log file: E:/CAB/LAB_3/lab3/led_ip/managed_ip_project/vivado.log
+# Journal file: E:/CAB/LAB_3/lab3/led_ip/managed_ip_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/CAB/LAB_3/lab3/led_ip/managed_ip_project/managed_ip_project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/CAB/LAB_3/lab3/led_ip/ip_repo/led_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 628.758 ; gain = 63.648
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 21 15:15:28 2025...

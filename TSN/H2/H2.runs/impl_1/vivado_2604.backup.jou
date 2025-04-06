@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Apr  6 12:32:23 2025
+# Process ID: 2604
+# Current directory: D:/CAB/TSN/H2/H2.runs/impl_1
+# Command line: vivado.exe -log h2_blockDesign_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source h2_blockDesign_wrapper.tcl -notrace
+# Log file: D:/CAB/TSN/H2/H2.runs/impl_1/h2_blockDesign_wrapper.vdi
+# Journal file: D:/CAB/TSN/H2/H2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source h2_blockDesign_wrapper.tcl -notrace

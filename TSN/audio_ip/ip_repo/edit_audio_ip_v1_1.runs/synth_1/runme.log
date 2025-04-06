@@ -1,0 +1,561 @@
+
+*** Running vivado
+    with args -log audio_ip_v1_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source audio_ip_v1_1.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source audio_ip_v1_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/CAB/TSN/audio_ip/audio_ip_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top audio_ip_v1_1 -part xc7z010iclg225-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5876 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 384.328 ; gain = 103.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'audio_ip_v1_1' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1.vhd:59]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+WARNING: [Synth 8-5640] Port 'clk_100' is missing in component declaration [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1.vhd:62]
+WARNING: [Synth 8-5640] Port 'clk_48' is missing in component declaration [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1.vhd:62]
+WARNING: [Synth 8-5640] Port 'ac_adr0' is missing in component declaration [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1.vhd:62]
+WARNING: [Synth 8-5640] Port 'ac_adr1' is missing in component declaration [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1.vhd:62]
+WARNING: [Synth 8-5640] Port 'ac_gpio0' is missing in component declaration [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1.vhd:62]
+WARNING: [Synth 8-5640] Port 'ac_gpio1' is missing in component declaration [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1.vhd:62]
+WARNING: [Synth 8-5640] Port 'ac_gpio2' is missing in component declaration [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1.vhd:62]
+WARNING: [Synth 8-5640] Port 'ac_gpio3' is missing in component declaration [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1.vhd:62]
+WARNING: [Synth 8-5640] Port 'ac_mclk' is missing in component declaration [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1.vhd:62]
+WARNING: [Synth 8-5640] Port 'ac_sck' is missing in component declaration [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1.vhd:62]
+WARNING: [Synth 8-5640] Port 'ac_sda' is missing in component declaration [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1.vhd:62]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'audio_ip_v1_1_S00_AXI' declared at 'e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1_S00_AXI.vhd:5' bound to instance 'audio_ip_v1_1_S00_AXI_inst' of component 'audio_ip_v1_1_S00_AXI' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'audio_ip_v1_1_S00_AXI' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1_S00_AXI.vhd:96]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter data_width bound to: 29 - type: integer 
+	Parameter window_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'low_pass_moving_sum' declared at 'e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/low_pass_moving_sum.vhd:19' bound to instance 'lpms1_l' of component 'low_pass_moving_sum' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1_S00_AXI.vhd:504]
+INFO: [Synth 8-638] synthesizing module 'low_pass_moving_sum' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/low_pass_moving_sum.vhd:28]
+	Parameter data_width bound to: 29 - type: integer 
+	Parameter window_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'low_pass_moving_sum' (1#1) [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/low_pass_moving_sum.vhd:28]
+	Parameter data_width bound to: 29 - type: integer 
+	Parameter window_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'low_pass_moving_sum' declared at 'e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/low_pass_moving_sum.vhd:19' bound to instance 'lpms1_r' of component 'low_pass_moving_sum' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1_S00_AXI.vhd:505]
+	Parameter data_width bound to: 29 - type: integer 
+	Parameter window_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'low_pass_moving_sum' declared at 'e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/low_pass_moving_sum.vhd:19' bound to instance 'lpms2_l' of component 'low_pass_moving_sum' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1_S00_AXI.vhd:506]
+INFO: [Synth 8-638] synthesizing module 'low_pass_moving_sum__parameterized2' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/low_pass_moving_sum.vhd:28]
+	Parameter data_width bound to: 29 - type: integer 
+	Parameter window_width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'low_pass_moving_sum__parameterized2' (1#1) [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/low_pass_moving_sum.vhd:28]
+	Parameter data_width bound to: 29 - type: integer 
+	Parameter window_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'low_pass_moving_sum' declared at 'e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/low_pass_moving_sum.vhd:19' bound to instance 'lpms2_r' of component 'low_pass_moving_sum' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1_S00_AXI.vhd:507]
+	Parameter data_width bound to: 29 - type: integer 
+	Parameter window_width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'low_pass_moving_sum' declared at 'e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/low_pass_moving_sum.vhd:19' bound to instance 'lpms3_l' of component 'low_pass_moving_sum' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1_S00_AXI.vhd:508]
+INFO: [Synth 8-638] synthesizing module 'low_pass_moving_sum__parameterized4' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/low_pass_moving_sum.vhd:28]
+	Parameter data_width bound to: 29 - type: integer 
+	Parameter window_width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'low_pass_moving_sum__parameterized4' (1#1) [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/low_pass_moving_sum.vhd:28]
+	Parameter data_width bound to: 29 - type: integer 
+	Parameter window_width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'low_pass_moving_sum' declared at 'e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/low_pass_moving_sum.vhd:19' bound to instance 'lpms3_r' of component 'low_pass_moving_sum' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1_S00_AXI.vhd:509]
+INFO: [Synth 8-3491] module 'adau1761_izedboard' declared at 'e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/adau1761_izedboard.vhd:26' bound to instance 'Inst_adau1761_izedboard' of component 'adau1761_izedboard' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1_S00_AXI.vhd:529]
+INFO: [Synth 8-638] synthesizing module 'adau1761_izedboard' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/adau1761_izedboard.vhd:47]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'i_i2s_sda_obuf' to cell 'IOBUF' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/adau1761_izedboard.vhd:132]
+INFO: [Synth 8-3491] module 'i2c' declared at 'e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/i2c.vhd:9' bound to instance 'Inst_i2c' of component 'i2c' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/adau1761_izedboard.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'i2c' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/i2c.vhd:19]
+INFO: [Synth 8-3491] module 'adau1761_configuraiton_data' declared at 'e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/adau1761_configuraiton_data.vhd:13' bound to instance 'Inst_adau1761_configuraiton_data' of component 'adau1761_configuraiton_data' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/i2c.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'adau1761_configuraiton_data' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/adau1761_configuraiton_data.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'adau1761_configuraiton_data' (2#1) [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/adau1761_configuraiton_data.vhd:19]
+	Parameter clk_divide bound to: 8'b01111000 
+INFO: [Synth 8-3491] module 'i3c2' declared at 'e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/i3c2.vhd:18' bound to instance 'Inst_i3c2' of component 'i3c2' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/i2c.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'i3c2' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/i3c2.vhd:38]
+	Parameter clk_divide bound to: 8'b01111000 
+INFO: [Synth 8-256] done synthesizing module 'i3c2' (3#1) [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/i3c2.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'i2c' (4#1) [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/i2c.vhd:19]
+INFO: [Synth 8-3491] module 'ADAU1761_interface' declared at 'e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/ADAU1761_interface.vhd:11' bound to instance 'i_ADAU1761_interface' of component 'ADAU1761_interface' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/adau1761_izedboard.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'ADAU1761_interface' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/ADAU1761_interface.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'ADAU1761_interface' (5#1) [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/ADAU1761_interface.vhd:16]
+INFO: [Synth 8-3491] module 'i2s_data_interface' declared at 'e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/i2s_data_interface.vhd:13' bound to instance 'Inst_i2s_data_interface' of component 'i2s_data_interface' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/adau1761_izedboard.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'i2s_data_interface' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/i2s_data_interface.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'i2s_data_interface' (6#1) [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/i2s_data_interface.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'adau1761_izedboard' (7#1) [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/adau1761_izedboard.vhd:47]
+INFO: [Synth 8-3491] module 'dsp_block' declared at 'e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/dsp_block.vhd:10' bound to instance 'Inst_dsp_block' of component 'dsp_block' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1_S00_AXI.vhd:549]
+INFO: [Synth 8-638] synthesizing module 'dsp_block' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/dsp_block.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'dsp_block' (8#1) [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/dsp_block.vhd:19]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1_S00_AXI.vhd:317]
+INFO: [Synth 8-256] done synthesizing module 'audio_ip_v1_1_S00_AXI' (9#1) [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1_S00_AXI.vhd:96]
+WARNING: [Synth 8-3848] Net AC_ADR0 in module/entity audio_ip_v1_1 does not have driver. [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1.vhd:21]
+WARNING: [Synth 8-3848] Net AC_ADR1 in module/entity audio_ip_v1_1 does not have driver. [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1.vhd:22]
+WARNING: [Synth 8-3848] Net AC_GPIO0 in module/entity audio_ip_v1_1 does not have driver. [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1.vhd:23]
+WARNING: [Synth 8-3848] Net AC_MCLK in module/entity audio_ip_v1_1 does not have driver. [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1.vhd:27]
+WARNING: [Synth 8-3848] Net AC_SCK in module/entity audio_ip_v1_1 does not have driver. [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'audio_ip_v1_1' (10#1) [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/hdl/audio_ip_v1_1.vhd:59]
+WARNING: [Synth 8-3331] design dsp_block has unconnected port clk
+WARNING: [Synth 8-3331] design dsp_block has unconnected port new_sample
+WARNING: [Synth 8-3331] design audio_ip_v1_1_S00_AXI has unconnected port clk_100
+WARNING: [Synth 8-3331] design audio_ip_v1_1_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design audio_ip_v1_1_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design audio_ip_v1_1_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design audio_ip_v1_1_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design audio_ip_v1_1_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design audio_ip_v1_1_S00_AXI has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port AC_ADR0
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port AC_ADR1
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port AC_GPIO0
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port AC_MCLK
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port AC_SCK
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port AC_SDA
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port clk_100
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port clk_48
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port AC_GPIO1
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port AC_GPIO2
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port AC_GPIO3
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 440.855 ; gain = 159.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 440.855 ; gain = 159.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010iclg225-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 440.855 ; gain = 159.527
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010iclg225-1L
+INFO: [Synth 8-4471] merging register 'debug_scl_reg' into 'i2c_scl_reg' [e:/CAB/TSN/audio_ip/ip_repo/audio_ip_1.1/src/i3c2.vhd:129]
+INFO: [Synth 8-5544] ROM "i2c_started" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "i2c_scl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_scl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sda_t" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sda_t" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bitcount" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "i2c_bits_left" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "new_sample" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sr_in" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i2s_d_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 561.027 ; gain = 279.699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     29 Bit       Adders := 6     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	              928 Bit    Registers := 2     
+	              464 Bit    Registers := 2     
+	              232 Bit    Registers := 2     
+	              127 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 6     
+	               29 Bit    Registers := 6     
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 19    
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	   6 Input     32 Bit        Muxes := 5     
+	   4 Input     24 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 2     
+	  21 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   6 Input     16 Bit        Muxes := 1     
+	  13 Input     16 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   6 Input     10 Bit        Muxes := 1     
+	  13 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   6 Input      9 Bit        Muxes := 1     
+	  13 Input      9 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 2     
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 6     
+	  19 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 40    
+	   6 Input      1 Bit        Muxes := 14    
+	  14 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module low_pass_moving_sum 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     29 Bit       Adders := 1     
++---Registers : 
+	              232 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+Module low_pass_moving_sum__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     29 Bit       Adders := 1     
++---Registers : 
+	              464 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+Module low_pass_moving_sum__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     29 Bit       Adders := 1     
++---Registers : 
+	              928 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+Module adau1761_configuraiton_data 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module i3c2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	  21 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   6 Input     16 Bit        Muxes := 1     
+	  13 Input     16 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   6 Input     10 Bit        Muxes := 1     
+	  13 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   6 Input      9 Bit        Muxes := 1     
+	  13 Input      9 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 2     
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 6     
+	  19 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 31    
+	   6 Input      1 Bit        Muxes := 14    
+	  14 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module ADAU1761_interface 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module i2s_data_interface 
+Detailed RTL Component Info : 
++---Registers : 
+	              127 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               24 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module audio_ip_v1_1_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   6 Input     32 Bit        Muxes := 5     
+	   4 Input     24 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "Inst_i2c/Inst_i3c2/i2c_scl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Inst_i2c/Inst_i3c2/bitcount" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Inst_i2c/Inst_i3c2/state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Inst_i2c/Inst_i3c2/i2c_sda_t" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6040] Register Inst_i2c/Inst_i3c2/pcnext_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-3331] design audio_ip_v1_1_S00_AXI has unconnected port clk_100
+WARNING: [Synth 8-3331] design audio_ip_v1_1_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design audio_ip_v1_1_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design audio_ip_v1_1_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design audio_ip_v1_1_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design audio_ip_v1_1_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design audio_ip_v1_1_S00_AXI has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port AC_ADR0
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port AC_ADR1
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port AC_GPIO0
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port AC_MCLK
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port AC_SCK
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port AC_SDA
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port clk_100
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port clk_48
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port AC_GPIO1
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port AC_GPIO2
+WARNING: [Synth 8-3331] design audio_ip_v1_1 has unconnected port AC_GPIO3
+INFO: [Synth 8-3886] merging instance 'audio_ip_v1_1_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'audio_ip_v1_1_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\audio_ip_v1_1_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'audio_ip_v1_1_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'audio_ip_v1_1_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\audio_ip_v1_1_S00_AXI_inst/axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (audio_ip_v1_1_S00_AXI_inst/Inst_adau1761_izedboard/i_i2s_sda_obuf) is unused and will be removed from module audio_ip_v1_1.
+WARNING: [Synth 8-3332] Sequential element (audio_ip_v1_1_S00_AXI_inst/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[9]) is unused and will be removed from module audio_ip_v1_1.
+WARNING: [Synth 8-3332] Sequential element (audio_ip_v1_1_S00_AXI_inst/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[8]) is unused and will be removed from module audio_ip_v1_1.
+WARNING: [Synth 8-3332] Sequential element (audio_ip_v1_1_S00_AXI_inst/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[7]) is unused and will be removed from module audio_ip_v1_1.
+WARNING: [Synth 8-3332] Sequential element (audio_ip_v1_1_S00_AXI_inst/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[6]) is unused and will be removed from module audio_ip_v1_1.
+WARNING: [Synth 8-3332] Sequential element (audio_ip_v1_1_S00_AXI_inst/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[5]) is unused and will be removed from module audio_ip_v1_1.
+WARNING: [Synth 8-3332] Sequential element (audio_ip_v1_1_S00_AXI_inst/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[4]) is unused and will be removed from module audio_ip_v1_1.
+WARNING: [Synth 8-3332] Sequential element (audio_ip_v1_1_S00_AXI_inst/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[3]) is unused and will be removed from module audio_ip_v1_1.
+WARNING: [Synth 8-3332] Sequential element (audio_ip_v1_1_S00_AXI_inst/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[2]) is unused and will be removed from module audio_ip_v1_1.
+WARNING: [Synth 8-3332] Sequential element (audio_ip_v1_1_S00_AXI_inst/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[1]) is unused and will be removed from module audio_ip_v1_1.
+WARNING: [Synth 8-3332] Sequential element (audio_ip_v1_1_S00_AXI_inst/Inst_adau1761_izedboard/Inst_i2c/Inst_i3c2/pcnext_reg_rep[0]) is unused and will be removed from module audio_ip_v1_1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:27 . Memory (MB): peak = 588.930 ; gain = 307.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------------+----------------------------------------------------+---------------+----------------+
+|Module Name        | RTL Object                                         | Depth x Width | Implemented As | 
++-------------------+----------------------------------------------------+---------------+----------------+
+|adau1761_izedboard | Inst_i2c/Inst_adau1761_configuraiton_data/data_reg | 1024x9        | Block RAM      | 
++-------------------+----------------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:27 . Memory (MB): peak = 588.930 ; gain = 307.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:27 . Memory (MB): peak = 588.930 ; gain = 307.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:28 . Memory (MB): peak = 588.930 ; gain = 307.602
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:28 . Memory (MB): peak = 588.930 ; gain = 307.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:28 . Memory (MB): peak = 588.930 ; gain = 307.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:28 . Memory (MB): peak = 588.930 ; gain = 307.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:28 . Memory (MB): peak = 588.930 ; gain = 307.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:28 . Memory (MB): peak = 588.930 ; gain = 307.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |     1|
+|3     |LUT2  |     1|
+|4     |LUT3  |     1|
+|5     |LUT4  |     4|
+|6     |LUT5  |    52|
+|7     |LUT6  |    34|
+|8     |FDRE  |   200|
+|9     |FDSE  |     4|
+|10    |IBUF  |    49|
+|11    |OBUF  |    41|
+|12    |OBUFT |     5|
++------+------+------+
+
+Report Instance Areas: 
++------+-----------------------------+----------------------+------+
+|      |Instance                     |Module                |Cells |
++------+-----------------------------+----------------------+------+
+|1     |top                          |                      |   393|
+|2     |  audio_ip_v1_1_S00_AXI_inst |audio_ip_v1_1_S00_AXI |   297|
++------+-----------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:28 . Memory (MB): peak = 588.930 ; gain = 307.602
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 67 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:28 . Memory (MB): peak = 588.930 ; gain = 307.602
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:28 . Memory (MB): peak = 588.930 ; gain = 307.602
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 686.031 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+72 Infos, 68 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:39 . Memory (MB): peak = 686.031 ; gain = 417.438
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 686.031 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'e:/CAB/TSN/audio_ip/ip_repo/edit_audio_ip_v1_1.runs/synth_1/audio_ip_v1_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file audio_ip_v1_1_utilization_synth.rpt -pb audio_ip_v1_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  1 17:19:18 2025...
