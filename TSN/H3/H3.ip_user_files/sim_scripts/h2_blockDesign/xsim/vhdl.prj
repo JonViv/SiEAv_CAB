@@ -1,0 +1,17 @@
+vhdl xil_defaultlib  \
+"../../../bd/h2_blockDesign/ipshared/5c76/src/ADAU1761_interface.vhd" \
+"../../../bd/h2_blockDesign/ipshared/5c76/src/adau1761_configuraiton_data.vhd" \
+"../../../bd/h2_blockDesign/ipshared/5c76/src/adau1761_izedboard.vhd" \
+"../../../bd/h2_blockDesign/ipshared/5c76/hdl/audio_ip_v1_1_S00_AXI.vhd" \
+"../../../bd/h2_blockDesign/ipshared/5c76/src/dsp_block.vhd" \
+"../../../bd/h2_blockDesign/ipshared/5c76/src/i2c.vhd" \
+"../../../bd/h2_blockDesign/ipshared/5c76/src/i2s_data_interface.vhd" \
+"../../../bd/h2_blockDesign/ipshared/5c76/src/i3c2.vhd" \
+"../../../bd/h2_blockDesign/ipshared/5c76/src/low_pass_moving_sum.vhd" \
+"../../../bd/h2_blockDesign/ipshared/5c76/hdl/audio_ip_v1_1.vhd" \
+"../../../bd/h2_blockDesign/ip/h2_blockDesign_audio_ip_0_0/sim/h2_blockDesign_audio_ip_0_0.vhd" \
+"../../../bd/h2_blockDesign/ip/h2_blockDesign_axi_gpio_0_0/sim/h2_blockDesign_axi_gpio_0_0.vhd" \
+"../../../bd/h2_blockDesign/ip/h2_blockDesign_rst_ps7_0_100M_0/sim/h2_blockDesign_rst_ps7_0_100M_0.vhd" \
+"../../../bd/h2_blockDesign/sim/h2_blockDesign.vhd" \
+
+nosort
