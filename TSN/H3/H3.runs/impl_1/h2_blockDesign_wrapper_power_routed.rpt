@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Tue Apr  8 16:06:46 2025
-| Host             : U211170 running 64-bit major release  (build 9200)
+| Date             : Sat Apr 26 00:56:48 2025
+| Host             : LAPTOP-4N7ES2T7 running 64-bit major release  (build 9200)
 | Command          : report_power -file h2_blockDesign_wrapper_power_routed.rpt -pb h2_blockDesign_wrapper_power_summary_routed.pb -rpx h2_blockDesign_wrapper_power_routed.rpx
 | Design           : h2_blockDesign_wrapper
 | Device           : xc7z020clg484-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.685        |
+| Total On-Chip Power (W)  | 1.683        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.542        |
+| Dynamic (W)              | 1.540        |
 | Device Static (W)        | 0.143        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 65.6         |
@@ -52,19 +52,19 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.006 |        4 |       --- |             --- |
-| Slice Logic             |     0.002 |     3382 |       --- |             --- |
-|   LUT as Logic          |     0.002 |     1189 |     53200 |            2.23 |
-|   CARRY4                |    <0.001 |       66 |     13300 |            0.50 |
-|   Register              |    <0.001 |     1488 |    106400 |            1.40 |
-|   LUT as Shift Register |    <0.001 |      145 |     17400 |            0.83 |
-|   Others                |     0.000 |      227 |       --- |             --- |
-| Signals                 |     0.002 |     2481 |       --- |             --- |
+| Clocks                  |     0.005 |        4 |       --- |             --- |
+| Slice Logic             |     0.001 |     2172 |       --- |             --- |
+|   LUT as Logic          |     0.001 |      702 |     53200 |            1.32 |
+|   Register              |    <0.001 |      996 |    106400 |            0.94 |
+|   CARRY4                |    <0.001 |       22 |     13300 |            0.17 |
+|   LUT as Shift Register |    <0.001 |       62 |     17400 |            0.36 |
+|   Others                |     0.000 |      214 |       --- |             --- |
+| Signals                 |     0.002 |     1660 |       --- |             --- |
 | Block RAM               |    <0.001 |      0.5 |       140 |            0.36 |
-| I/O                     |     0.003 |       17 |       200 |            8.50 |
+| I/O                     |     0.003 |       14 |       200 |            7.00 |
 | PS7                     |     1.529 |        1 |       --- |             --- |
 | Static Power            |     0.143 |          |           |                 |
-| Total                   |     1.685 |          |           |                 |
+| Total                   |     1.683 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.026 |       0.011 |      0.015 |
+| Vccint    |       1.000 |     0.023 |       0.009 |      0.015 |
 | Vccaux    |       1.800 |     0.015 |       0.000 |      0.015 |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -151,13 +151,13 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| h2_blockDesign_wrapper   |     1.542 |
-|   h2_blockDesign_i       |     1.539 |
-|     AudioCodec           |     0.004 |
-|       U0                 |     0.004 |
+| h2_blockDesign_wrapper   |     1.540 |
+|   h2_blockDesign_i       |     1.537 |
+|     AudioCodec           |     0.002 |
+|       U0                 |     0.002 |
 |     processing_system7_0 |     1.529 |
 |       inst               |     1.529 |
-|     ps7_0_axi_periph     |     0.006 |
+|     ps7_0_axi_periph     |     0.005 |
 |       s00_couplers       |     0.004 |
 |       xbar               |     0.001 |
 +--------------------------+-----------+

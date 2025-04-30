@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Apr 29 17:44:52 2025
+# Process ID: 362470
+# Current directory: /home/labo1/vivado_2022_2_neorv32/basic_riscv.runs/impl_1
+# Command line: vivado -log neorv32_ProcessorTop_Minimal.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source neorv32_ProcessorTop_Minimal.tcl -notrace
+# Log file: /home/labo1/vivado_2022_2_neorv32/basic_riscv.runs/impl_1/neorv32_ProcessorTop_Minimal.vdi
+# Journal file: /home/labo1/vivado_2022_2_neorv32/basic_riscv.runs/impl_1/vivado.jou
+# Running On: asictools, OS: Linux, CPU Frequency: 2400.000 MHz, CPU Physical cores: 16, Host memory: 134580 MB
+#-----------------------------------------------------------
+source neorv32_ProcessorTop_Minimal.tcl -notrace

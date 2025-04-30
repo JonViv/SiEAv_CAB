@@ -1,0 +1,795 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Apr 29 17:45:23 2025
+| Host         : asictools running 64-bit unknown
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file neorv32_ProcessorTop_Minimal_timing_summary_routed.rpt -pb neorv32_ProcessorTop_Minimal_timing_summary_routed.pb -rpx neorv32_ProcessorTop_Minimal_timing_summary_routed.rpx -warn_on_violation
+| Design       : neorv32_ProcessorTop_Minimal
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                  Violations  
+---------  ----------------  ---------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell  1000        
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (1417)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (3934)
+5. checking no_input_delay (2)
+6. checking no_output_delay (4)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (1417)
+---------------------------
+ There are 1417 register/latch pins with no clock driven by root clock pin: clk_i (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (3934)
+---------------------------------------------------
+ There are 3934 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (2)
+------------------------------
+ There are 2 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (4)
+-------------------------------
+ There are 4 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                 3938          inf        0.000                      0                 3938           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay          3938 Endpoints
+Min Delay          3938 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1)
+  Destination:            neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/DIADI[24]
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        10.239ns  (logic 4.559ns (44.526%)  route 5.680ns (55.474%))
+  Logic Levels:           12  (CARRY4=7 LUT3=1 LUT5=1 LUT6=2 RAMB36E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X3Y1          RAMB36E1                     0.000     0.000 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/CLKBWRCLK
+    RAMB36_X3Y1          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[3])
+                                                      2.454     2.454 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/DOBDO[3]
+                         net (fo=8, routed)           2.046     4.500    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/DOBDO[3]
+    SLICE_X75Y4          LUT3 (Prop_lut3_I2_O)        0.150     4.650 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/serial_shifter.shifter[cnt][3]_i_2/O
+                         net (fo=3, routed)           0.904     5.554    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/immediate_reg[3]_0
+    SLICE_X67Y4          LUT5 (Prop_lut5_I3_O)        0.326     5.880 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar[3]_i_6/O
+                         net (fo=1, routed)           0.000     5.880    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar[3]_i_6_n_0
+    SLICE_X67Y4          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     6.281 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[3]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.281    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[3]_i_1_n_0
+    SLICE_X67Y5          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.395 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[7]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.395    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[7]_i_1_n_0
+    SLICE_X67Y6          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.509 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[11]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.509    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[11]_i_1_n_0
+    SLICE_X67Y7          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.623 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[15]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.623    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[15]_i_1_n_0
+    SLICE_X67Y8          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.737 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[19]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.737    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[19]_i_1_n_0
+    SLICE_X67Y9          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.851 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[23]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.851    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[23]_i_1_n_0
+    SLICE_X67Y10         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.235     7.086 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[27]_i_1/O[0]
+                         net (fo=3, routed)           0.606     7.692    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/alu_add[24]
+    SLICE_X66Y12         LUT6 (Prop_lut6_I0_O)        0.299     7.991 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/register_file_fpga.reg_file_reg_i_48/O
+                         net (fo=1, routed)           1.268     9.260    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/register_file_fpga.reg_file_reg_i_48_n_0
+    SLICE_X59Y12         LUT6 (Prop_lut6_I0_O)        0.124     9.384 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/register_file_fpga.reg_file_reg_i_13/O
+                         net (fo=1, routed)           0.855    10.239    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/DIADI[24]
+    RAMB36_X3Y1          RAMB36E1                                     r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/DIADI[24]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1)
+  Destination:            neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/DIADI[0]
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        10.130ns  (logic 4.774ns (47.126%)  route 5.356ns (52.874%))
+  Logic Levels:           14  (CARRY4=9 LUT3=1 LUT5=1 LUT6=2 RAMB36E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X3Y1          RAMB36E1                     0.000     0.000 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/CLKBWRCLK
+    RAMB36_X3Y1          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[3])
+                                                      2.454     2.454 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/DOBDO[3]
+                         net (fo=8, routed)           2.046     4.500    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/DOBDO[3]
+    SLICE_X75Y4          LUT3 (Prop_lut3_I2_O)        0.150     4.650 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/serial_shifter.shifter[cnt][3]_i_2/O
+                         net (fo=3, routed)           0.904     5.554    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/immediate_reg[3]_0
+    SLICE_X67Y4          LUT5 (Prop_lut5_I3_O)        0.326     5.880 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar[3]_i_6/O
+                         net (fo=1, routed)           0.000     5.880    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar[3]_i_6_n_0
+    SLICE_X67Y4          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     6.281 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[3]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.281    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[3]_i_1_n_0
+    SLICE_X67Y5          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.395 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[7]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.395    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[7]_i_1_n_0
+    SLICE_X67Y6          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.509 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[11]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.509    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[11]_i_1_n_0
+    SLICE_X67Y7          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.623 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[15]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.623    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[15]_i_1_n_0
+    SLICE_X67Y8          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.737 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[19]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.737    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[19]_i_1_n_0
+    SLICE_X67Y9          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.851 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[23]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.851    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[23]_i_1_n_0
+    SLICE_X67Y10         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.965 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[27]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.965    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[27]_i_1_n_0
+    SLICE_X67Y11         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.079 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[31]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     7.079    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[31]_i_2_n_0
+    SLICE_X67Y12         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222     7.301 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/register_file_fpga.reg_file_reg_i_107/O[0]
+                         net (fo=1, routed)           0.765     8.067    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_shifter_inst/register_file_fpga.reg_file_reg[0]
+    SLICE_X73Y6          LUT6 (Prop_lut6_I3_O)        0.299     8.366 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_shifter_inst/register_file_fpga.reg_file_reg_i_73/O
+                         net (fo=1, routed)           0.789     9.155    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/register_file_fpga.reg_file_reg_0
+    SLICE_X75Y6          LUT6 (Prop_lut6_I3_O)        0.124     9.279 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/register_file_fpga.reg_file_reg_i_37/O
+                         net (fo=1, routed)           0.851    10.130    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/DIADI[0]
+    RAMB36_X3Y1          RAMB36E1                                     r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/DIADI[0]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/FSM_sequential_fetch_reg[state][1]/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            neorv32_inst/memory_system.neorv32_int_dmem_enabled.neorv32_int_dmem_inst/dmem_ram_default.mem_ram_b3_reg_3/WEA[0]
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        10.087ns  (logic 1.447ns (14.345%)  route 8.640ns (85.655%))
+  Logic Levels:           6  (FDPE=1 LUT2=1 LUT6=4)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X72Y13         FDPE                         0.000     0.000 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/FSM_sequential_fetch_reg[state][1]/C
+    SLICE_X72Y13         FDPE (Prop_fdpe_C_Q)         0.419     0.419 f  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/FSM_sequential_fetch_reg[state][1]/Q
+                         net (fo=39, routed)          1.328     1.747    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/fetch[priv]
+    SLICE_X70Y11         LUT2 (Prop_lut2_I0_O)        0.329     2.076 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/sleep_mode_i_3/O
+                         net (fo=3, routed)           1.112     3.187    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/prefetch_buffer[0].prefetch_buffer_inst/dmem_ram_default.mem_ram_b0_reg_3
+    SLICE_X70Y14         LUT6 (Prop_lut6_I5_O)        0.327     3.514 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/prefetch_buffer[0].prefetch_buffer_inst/dmem_ram_default.mem_ram_b0_reg_0_i_6/O
+                         net (fo=19, routed)          0.955     4.470    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/prefetch_buffer[0].prefetch_buffer_inst/b_req_reg
+    SLICE_X68Y12         LUT6 (Prop_lut6_I4_O)        0.124     4.594 f  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/prefetch_buffer[0].prefetch_buffer_inst/rden_i_10/O
+                         net (fo=1, routed)           0.991     5.585    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/prefetch_buffer[0].prefetch_buffer_inst/core_req[0][addr][22]
+    SLICE_X68Y13         LUT6 (Prop_lut6_I3_O)        0.124     5.709 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/prefetch_buffer[0].prefetch_buffer_inst/rden_i_3/O
+                         net (fo=7, routed)           1.132     6.841    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dmem_ram_default.mem_ram_b3_reg_3
+    SLICE_X69Y14         LUT6 (Prop_lut6_I2_O)        0.124     6.965 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dmem_ram_default.mem_ram_b3_reg_0_i_1/O
+                         net (fo=4, routed)           3.122    10.087    neorv32_inst/memory_system.neorv32_int_dmem_enabled.neorv32_int_dmem_inst/dmem_ram_default.mem_ram_b3_reg_3_1[0]
+    RAMB36_X2Y1          RAMB36E1                                     r  neorv32_inst/memory_system.neorv32_int_dmem_enabled.neorv32_int_dmem_inst/dmem_ram_default.mem_ram_b3_reg_3/WEA[0]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1)
+  Destination:            neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/DIADI[25]
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        10.014ns  (logic 4.676ns (46.695%)  route 5.338ns (53.305%))
+  Logic Levels:           12  (CARRY4=7 LUT3=1 LUT5=1 LUT6=2 RAMB36E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X3Y1          RAMB36E1                     0.000     0.000 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/CLKBWRCLK
+    RAMB36_X3Y1          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[3])
+                                                      2.454     2.454 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/DOBDO[3]
+                         net (fo=8, routed)           2.046     4.500    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/DOBDO[3]
+    SLICE_X75Y4          LUT3 (Prop_lut3_I2_O)        0.150     4.650 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/serial_shifter.shifter[cnt][3]_i_2/O
+                         net (fo=3, routed)           0.904     5.554    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/immediate_reg[3]_0
+    SLICE_X67Y4          LUT5 (Prop_lut5_I3_O)        0.326     5.880 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar[3]_i_6/O
+                         net (fo=1, routed)           0.000     5.880    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar[3]_i_6_n_0
+    SLICE_X67Y4          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     6.281 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[3]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.281    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[3]_i_1_n_0
+    SLICE_X67Y5          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.395 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[7]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.395    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[7]_i_1_n_0
+    SLICE_X67Y6          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.509 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[11]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.509    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[11]_i_1_n_0
+    SLICE_X67Y7          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.623 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[15]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.623    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[15]_i_1_n_0
+    SLICE_X67Y8          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.737 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[19]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.737    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[19]_i_1_n_0
+    SLICE_X67Y9          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.851 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[23]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.851    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[23]_i_1_n_0
+    SLICE_X67Y10         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.348     7.199 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[27]_i_1/O[1]
+                         net (fo=3, routed)           0.786     7.985    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/alu_add[25]
+    SLICE_X63Y10         LUT6 (Prop_lut6_I0_O)        0.303     8.288 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/register_file_fpga.reg_file_reg_i_47/O
+                         net (fo=1, routed)           0.954     9.242    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/register_file_fpga.reg_file_reg_i_47_n_0
+    SLICE_X58Y11         LUT6 (Prop_lut6_I0_O)        0.124     9.366 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/register_file_fpga.reg_file_reg_i_12/O
+                         net (fo=1, routed)           0.648    10.014    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/DIADI[25]
+    RAMB36_X3Y1          RAMB36E1                                     r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/DIADI[25]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1)
+  Destination:            neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/DIADI[26]
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.980ns  (logic 4.583ns (45.924%)  route 5.397ns (54.076%))
+  Logic Levels:           12  (CARRY4=7 LUT3=1 LUT5=1 LUT6=2 RAMB36E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X3Y1          RAMB36E1                     0.000     0.000 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/CLKBWRCLK
+    RAMB36_X3Y1          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[3])
+                                                      2.454     2.454 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/DOBDO[3]
+                         net (fo=8, routed)           2.046     4.500    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/DOBDO[3]
+    SLICE_X75Y4          LUT3 (Prop_lut3_I2_O)        0.150     4.650 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/serial_shifter.shifter[cnt][3]_i_2/O
+                         net (fo=3, routed)           0.904     5.554    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/immediate_reg[3]_0
+    SLICE_X67Y4          LUT5 (Prop_lut5_I3_O)        0.326     5.880 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar[3]_i_6/O
+                         net (fo=1, routed)           0.000     5.880    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar[3]_i_6_n_0
+    SLICE_X67Y4          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     6.281 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[3]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.281    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[3]_i_1_n_0
+    SLICE_X67Y5          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.395 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[7]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.395    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[7]_i_1_n_0
+    SLICE_X67Y6          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.509 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[11]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.509    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[11]_i_1_n_0
+    SLICE_X67Y7          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.623 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[15]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.623    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[15]_i_1_n_0
+    SLICE_X67Y8          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.737 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[19]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.737    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[19]_i_1_n_0
+    SLICE_X67Y9          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.851 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[23]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.851    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[23]_i_1_n_0
+    SLICE_X67Y10         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     7.107 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[27]_i_1/O[2]
+                         net (fo=3, routed)           1.020     8.127    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/alu_add[26]
+    SLICE_X62Y10         LUT6 (Prop_lut6_I0_O)        0.302     8.429 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/register_file_fpga.reg_file_reg_i_46/O
+                         net (fo=1, routed)           0.769     9.198    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/register_file_fpga.reg_file_reg_i_46_n_0
+    SLICE_X60Y11         LUT6 (Prop_lut6_I0_O)        0.124     9.322 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/register_file_fpga.reg_file_reg_i_11/O
+                         net (fo=1, routed)           0.658     9.980    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/DIADI[26]
+    RAMB36_X3Y1          RAMB36E1                                     r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/DIADI[26]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1)
+  Destination:            neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine_reg[pc2][12]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.950ns  (logic 3.992ns (40.122%)  route 5.958ns (59.878%))
+  Logic Levels:           7  (CARRY4=3 LUT4=1 LUT5=1 LUT6=1 RAMB36E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X3Y1          RAMB36E1                     0.000     0.000 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/CLKARDCLK
+    RAMB36_X3Y1          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[16])
+                                                      2.454     2.454 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/DOADO[16]
+                         net (fo=8, routed)           2.088     4.542    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/DOADO[16]
+    SLICE_X65Y7          LUT4 (Prop_lut4_I0_O)        0.124     4.666 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/i__carry__1_i_8/O
+                         net (fo=1, routed)           0.000     4.666    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/cmp0_inferred__0/i__carry__2_1[0]
+    SLICE_X65Y7          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     5.198 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/cmp0_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     5.198    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/cmp0_inferred__0/i__carry__1_n_0
+    SLICE_X65Y8          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.312 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/cmp0_inferred__0/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.000     5.312    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/cmp0_inferred__0/i__carry__2_n_0
+    SLICE_X65Y9          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     5.583 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/cmp0_inferred__0/i__carry__3/CO[0]
+                         net (fo=2, routed)           1.102     6.685    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/alu_cmp[1]
+    SLICE_X74Y9          LUT6 (Prop_lut6_I3_O)        0.373     7.058 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine[pc2][31]_i_3/O
+                         net (fo=4, routed)           1.062     8.120    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine_nxt[state]1116_out__0
+    SLICE_X72Y10         LUT5 (Prop_lut5_I3_O)        0.124     8.244 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine[pc2][31]_i_1/O
+                         net (fo=31, routed)          1.706     9.950    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine[pc2][31]_i_1_n_0
+    SLICE_X64Y5          FDCE                                         r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine_reg[pc2][12]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1)
+  Destination:            neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine_reg[pc2][19]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.950ns  (logic 3.992ns (40.122%)  route 5.958ns (59.878%))
+  Logic Levels:           7  (CARRY4=3 LUT4=1 LUT5=1 LUT6=1 RAMB36E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X3Y1          RAMB36E1                     0.000     0.000 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/CLKARDCLK
+    RAMB36_X3Y1          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[16])
+                                                      2.454     2.454 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/DOADO[16]
+                         net (fo=8, routed)           2.088     4.542    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/DOADO[16]
+    SLICE_X65Y7          LUT4 (Prop_lut4_I0_O)        0.124     4.666 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/i__carry__1_i_8/O
+                         net (fo=1, routed)           0.000     4.666    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/cmp0_inferred__0/i__carry__2_1[0]
+    SLICE_X65Y7          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     5.198 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/cmp0_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     5.198    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/cmp0_inferred__0/i__carry__1_n_0
+    SLICE_X65Y8          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.312 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/cmp0_inferred__0/i__carry__2/CO[3]
+                         net (fo=1, routed)           0.000     5.312    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/cmp0_inferred__0/i__carry__2_n_0
+    SLICE_X65Y9          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     5.583 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/cmp0_inferred__0/i__carry__3/CO[0]
+                         net (fo=2, routed)           1.102     6.685    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/alu_cmp[1]
+    SLICE_X74Y9          LUT6 (Prop_lut6_I3_O)        0.373     7.058 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine[pc2][31]_i_3/O
+                         net (fo=4, routed)           1.062     8.120    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine_nxt[state]1116_out__0
+    SLICE_X72Y10         LUT5 (Prop_lut5_I3_O)        0.124     8.244 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine[pc2][31]_i_1/O
+                         net (fo=31, routed)          1.706     9.950    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine[pc2][31]_i_1_n_0
+    SLICE_X64Y5          FDCE                                         r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine_reg[pc2][19]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/FSM_sequential_fetch_reg[state][1]/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            neorv32_inst/memory_system.neorv32_int_dmem_enabled.neorv32_int_dmem_inst/dmem_ram_default.mem_ram_b3_reg_3/ADDRARDADDR[1]
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.931ns  (logic 1.323ns (13.322%)  route 8.608ns (86.678%))
+  Logic Levels:           5  (FDPE=1 LUT2=1 LUT3=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X72Y13         FDPE                         0.000     0.000 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/FSM_sequential_fetch_reg[state][1]/C
+    SLICE_X72Y13         FDPE (Prop_fdpe_C_Q)         0.419     0.419 f  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/FSM_sequential_fetch_reg[state][1]/Q
+                         net (fo=39, routed)          1.328     1.747    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/fetch[priv]
+    SLICE_X70Y11         LUT2 (Prop_lut2_I0_O)        0.329     2.076 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/sleep_mode_i_3/O
+                         net (fo=3, routed)           1.112     3.187    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/prefetch_buffer[0].prefetch_buffer_inst/dmem_ram_default.mem_ram_b0_reg_3
+    SLICE_X70Y14         LUT6 (Prop_lut6_I5_O)        0.327     3.514 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/prefetch_buffer[0].prefetch_buffer_inst/dmem_ram_default.mem_ram_b0_reg_0_i_6/O
+                         net (fo=19, routed)          1.073     4.587    neorv32_inst/core_complex_gen[0].neorv32_core_bus_switch_inst/state_nxt00_out
+    SLICE_X71Y11         LUT6 (Prop_lut6_I4_O)        0.124     4.711 r  neorv32_inst/core_complex_gen[0].neorv32_core_bus_switch_inst/w_pnt[1]_i_3/O
+                         net (fo=31, routed)          1.775     6.486    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/sel
+    SLICE_X70Y4          LUT3 (Prop_lut3_I2_O)        0.124     6.610 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/imem_rom.imem_rom_default.rdata_reg_0_i_11/O
+                         net (fo=19, routed)          3.321     9.931    neorv32_inst/memory_system.neorv32_int_dmem_enabled.neorv32_int_dmem_inst/dmem_ram_default.mem_ram_b0_reg_3_0[0]
+    RAMB36_X2Y1          RAMB36E1                                     r  neorv32_inst/memory_system.neorv32_int_dmem_enabled.neorv32_int_dmem_inst/dmem_ram_default.mem_ram_b3_reg_3/ADDRARDADDR[1]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1)
+  Destination:            neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/DIADI[29]
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.928ns  (logic 4.790ns (48.246%)  route 5.138ns (51.754%))
+  Logic Levels:           13  (CARRY4=8 LUT3=1 LUT5=1 LUT6=2 RAMB36E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X3Y1          RAMB36E1                     0.000     0.000 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/CLKBWRCLK
+    RAMB36_X3Y1          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[3])
+                                                      2.454     2.454 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/DOBDO[3]
+                         net (fo=8, routed)           2.046     4.500    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/DOBDO[3]
+    SLICE_X75Y4          LUT3 (Prop_lut3_I2_O)        0.150     4.650 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/serial_shifter.shifter[cnt][3]_i_2/O
+                         net (fo=3, routed)           0.904     5.554    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/immediate_reg[3]_0
+    SLICE_X67Y4          LUT5 (Prop_lut5_I3_O)        0.326     5.880 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar[3]_i_6/O
+                         net (fo=1, routed)           0.000     5.880    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar[3]_i_6_n_0
+    SLICE_X67Y4          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     6.281 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[3]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.281    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[3]_i_1_n_0
+    SLICE_X67Y5          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.395 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[7]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.395    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[7]_i_1_n_0
+    SLICE_X67Y6          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.509 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[11]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.509    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[11]_i_1_n_0
+    SLICE_X67Y7          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.623 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[15]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.623    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[15]_i_1_n_0
+    SLICE_X67Y8          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.737 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[19]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.737    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[19]_i_1_n_0
+    SLICE_X67Y9          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.851 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[23]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.851    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[23]_i_1_n_0
+    SLICE_X67Y10         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.965 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[27]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     6.965    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[27]_i_1_n_0
+    SLICE_X67Y11         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.348     7.313 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/mar_reg[31]_i_2/O[1]
+                         net (fo=3, routed)           0.667     7.981    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/alu_add[29]
+    SLICE_X65Y10         LUT6 (Prop_lut6_I0_O)        0.303     8.284 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/register_file_fpga.reg_file_reg_i_43/O
+                         net (fo=1, routed)           0.879     9.163    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/register_file_fpga.reg_file_reg_i_43_n_0
+    SLICE_X65Y10         LUT6 (Prop_lut6_I0_O)        0.124     9.287 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/register_file_fpga.reg_file_reg_i_8/O
+                         net (fo=1, routed)           0.642     9.928    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/DIADI[29]
+    RAMB36_X3Y1          RAMB36E1                                     r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/DIADI[29]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/FSM_sequential_fetch_reg[state][1]/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            neorv32_inst/memory_system.neorv32_int_dmem_enabled.neorv32_int_dmem_inst/dmem_ram_default.mem_ram_b3_reg_0/WEA[0]
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.885ns  (logic 1.447ns (14.639%)  route 8.438ns (85.361%))
+  Logic Levels:           6  (FDPE=1 LUT2=1 LUT6=4)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X72Y13         FDPE                         0.000     0.000 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/FSM_sequential_fetch_reg[state][1]/C
+    SLICE_X72Y13         FDPE (Prop_fdpe_C_Q)         0.419     0.419 f  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/FSM_sequential_fetch_reg[state][1]/Q
+                         net (fo=39, routed)          1.328     1.747    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/fetch[priv]
+    SLICE_X70Y11         LUT2 (Prop_lut2_I0_O)        0.329     2.076 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/sleep_mode_i_3/O
+                         net (fo=3, routed)           1.112     3.187    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/prefetch_buffer[0].prefetch_buffer_inst/dmem_ram_default.mem_ram_b0_reg_3
+    SLICE_X70Y14         LUT6 (Prop_lut6_I5_O)        0.327     3.514 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/prefetch_buffer[0].prefetch_buffer_inst/dmem_ram_default.mem_ram_b0_reg_0_i_6/O
+                         net (fo=19, routed)          0.955     4.470    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/prefetch_buffer[0].prefetch_buffer_inst/b_req_reg
+    SLICE_X68Y12         LUT6 (Prop_lut6_I4_O)        0.124     4.594 f  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/prefetch_buffer[0].prefetch_buffer_inst/rden_i_10/O
+                         net (fo=1, routed)           0.991     5.585    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/prefetch_buffer[0].prefetch_buffer_inst/core_req[0][addr][22]
+    SLICE_X68Y13         LUT6 (Prop_lut6_I3_O)        0.124     5.709 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_frontend_inst/prefetch_buffer[0].prefetch_buffer_inst/rden_i_3/O
+                         net (fo=7, routed)           1.132     6.841    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dmem_ram_default.mem_ram_b3_reg_3
+    SLICE_X69Y14         LUT6 (Prop_lut6_I2_O)        0.124     6.965 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dmem_ram_default.mem_ram_b3_reg_0_i_1/O
+                         net (fo=4, routed)           2.920     9.885    neorv32_inst/memory_system.neorv32_int_dmem_enabled.neorv32_int_dmem_inst/dmem_ram_default.mem_ram_b3_reg_3_1[0]
+    RAMB36_X2Y2          RAMB36E1                                     r  neorv32_inst/memory_system.neorv32_int_dmem_enabled.neorv32_int_dmem_inst/dmem_ram_default.mem_ram_b3_reg_0/WEA[0]
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/ctrl_reg[lsu_fence]_inv/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine_reg[msync]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.206ns  (logic 0.141ns (68.336%)  route 0.065ns (31.664%))
+  Logic Levels:           1  (FDPE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X78Y2          FDPE                         0.000     0.000 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/ctrl_reg[lsu_fence]_inv/C
+    SLICE_X78Y2          FDPE (Prop_fdpe_C_Q)         0.141     0.141 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/ctrl_reg[lsu_fence]_inv/Q
+                         net (fo=1, routed)           0.065     0.206    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine_nxt[msync]
+    SLICE_X78Y2          FDCE                                         r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine_reg[msync]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 neorv32_inst/io_system.neorv32_sysinfo_enabled.neorv32_sysinfo_inst/sysinfo_reg[0][17]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            neorv32_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/response_reg_enabled.host_rsp_o_reg[data][17]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.244ns  (logic 0.186ns (76.078%)  route 0.058ns (23.922%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X89Y13         FDCE                         0.000     0.000 r  neorv32_inst/io_system.neorv32_sysinfo_enabled.neorv32_sysinfo_inst/sysinfo_reg[0][17]/C
+    SLICE_X89Y13         FDCE (Prop_fdce_C_Q)         0.141     0.141 r  neorv32_inst/io_system.neorv32_sysinfo_enabled.neorv32_sysinfo_inst/sysinfo_reg[0][17]/Q
+                         net (fo=1, routed)           0.058     0.199    neorv32_inst/io_system.neorv32_bus_io_switch_inst/response_reg_enabled.host_rsp_o_reg[data][31][17]
+    SLICE_X88Y13         LUT6 (Prop_lut6_I2_O)        0.045     0.244 r  neorv32_inst/io_system.neorv32_bus_io_switch_inst/response_reg_enabled.host_rsp_o[data][17]_i_1/O
+                         net (fo=1, routed)           0.000     0.244    neorv32_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/response_reg_enabled.host_rsp_o_reg[data][31]_0[17]
+    SLICE_X88Y13         FDCE                                         r  neorv32_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/response_reg_enabled.host_rsp_o_reg[data][17]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/csr_reg[mepc][29]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine_reg[pc2][29]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.251ns  (logic 0.186ns (74.077%)  route 0.065ns (25.923%))
+  Logic Levels:           2  (FDCE=1 LUT5=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y12         FDCE                         0.000     0.000 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/csr_reg[mepc][29]/C
+    SLICE_X64Y12         FDCE (Prop_fdce_C_Q)         0.141     0.141 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/csr_reg[mepc][29]/Q
+                         net (fo=2, routed)           0.065     0.206    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/csr_reg[mepc][29]
+    SLICE_X65Y12         LUT5 (Prop_lut5_I1_O)        0.045     0.251 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine[pc2][29]_i_1/O
+                         net (fo=1, routed)           0.000     0.251    neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine_nxt[pc2][29]
+    SLICE_X65Y12         FDCE                                         r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine_reg[pc2][29]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 neorv32_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/request_reg_enabled.device_req_o_reg[data][6]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            neorv32_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/neorv32_clint_mtimecmp_gen[0].neorv32_clint_mtimecmp_inst/mtimecmp_q_reg[38]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.252ns  (logic 0.128ns (50.857%)  route 0.124ns (49.143%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X89Y10         FDCE                         0.000     0.000 r  neorv32_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/request_reg_enabled.device_req_o_reg[data][6]/C
+    SLICE_X89Y10         FDCE (Prop_fdce_C_Q)         0.128     0.128 r  neorv32_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/request_reg_enabled.device_req_o_reg[data][6]/Q
+                         net (fo=10, routed)          0.124     0.252    neorv32_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/neorv32_clint_mtimecmp_gen[0].neorv32_clint_mtimecmp_inst/mtimecmp_q_reg[31]_0[6]
+    SLICE_X89Y9          FDCE                                         r  neorv32_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/neorv32_clint_mtimecmp_gen[0].neorv32_clint_mtimecmp_inst/mtimecmp_q_reg[38]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 neorv32_inst/io_system.neorv32_pwm_enabled.neorv32_pwm_inst/pwm_channel_gen[2].neorv32_pwm_channel_inst/cfg_cdiv_reg[2]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            neorv32_inst/io_system.neorv32_pwm_enabled.neorv32_pwm_inst/bus_rsp_o_reg[data][10]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.252ns  (logic 0.186ns (73.740%)  route 0.066ns (26.260%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X91Y7          FDCE                         0.000     0.000 r  neorv32_inst/io_system.neorv32_pwm_enabled.neorv32_pwm_inst/pwm_channel_gen[2].neorv32_pwm_channel_inst/cfg_cdiv_reg[2]/C
+    SLICE_X91Y7          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  neorv32_inst/io_system.neorv32_pwm_enabled.neorv32_pwm_inst/pwm_channel_gen[2].neorv32_pwm_channel_inst/cfg_cdiv_reg[2]/Q
+                         net (fo=2, routed)           0.066     0.207    neorv32_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/bus_rsp_o_reg[data][17]_1[2]
+    SLICE_X90Y7          LUT6 (Prop_lut6_I4_O)        0.045     0.252 r  neorv32_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/bus_rsp_o[data][10]_i_1/O
+                         net (fo=1, routed)           0.000     0.252    neorv32_inst/io_system.neorv32_pwm_enabled.neorv32_pwm_inst/bus_rsp_o_reg[data][31]_1[10]
+    SLICE_X90Y7          FDCE                                         r  neorv32_inst/io_system.neorv32_pwm_enabled.neorv32_pwm_inst/bus_rsp_o_reg[data][10]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 neorv32_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/request_reg_enabled.device_req_o_reg[data][21]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            neorv32_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/neorv32_clint_mtimecmp_gen[0].neorv32_clint_mtimecmp_inst/mtimecmp_q_reg[21]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.253ns  (logic 0.141ns (55.687%)  route 0.112ns (44.313%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X89Y10         FDCE                         0.000     0.000 r  neorv32_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/request_reg_enabled.device_req_o_reg[data][21]/C
+    SLICE_X89Y10         FDCE (Prop_fdce_C_Q)         0.141     0.141 r  neorv32_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/request_reg_enabled.device_req_o_reg[data][21]/Q
+                         net (fo=5, routed)           0.112     0.253    neorv32_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/neorv32_clint_mtimecmp_gen[0].neorv32_clint_mtimecmp_inst/mtimecmp_q_reg[31]_0[21]
+    SLICE_X86Y10         FDCE                                         r  neorv32_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/neorv32_clint_mtimecmp_gen[0].neorv32_clint_mtimecmp_inst/mtimecmp_q_reg[21]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 neorv32_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/request_reg_enabled.device_req_o_reg[data][9]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            neorv32_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/neorv32_clint_mtimecmp_gen[0].neorv32_clint_mtimecmp_inst/mtimecmp_q_reg[9]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.255ns  (logic 0.128ns (50.224%)  route 0.127ns (49.776%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y11         FDCE                         0.000     0.000 r  neorv32_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/request_reg_enabled.device_req_o_reg[data][9]/C
+    SLICE_X88Y11         FDCE (Prop_fdce_C_Q)         0.128     0.128 r  neorv32_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/request_reg_enabled.device_req_o_reg[data][9]/Q
+                         net (fo=9, routed)           0.127     0.255    neorv32_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/neorv32_clint_mtimecmp_gen[0].neorv32_clint_mtimecmp_inst/mtimecmp_q_reg[31]_0[9]
+    SLICE_X86Y10         FDCE                                         r  neorv32_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/neorv32_clint_mtimecmp_gen[0].neorv32_clint_mtimecmp_inst/mtimecmp_q_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 neorv32_inst/io_system.neorv32_sysinfo_enabled.neorv32_sysinfo_inst/sysinfo_reg[0][30]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            neorv32_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/response_reg_enabled.host_rsp_o_reg[data][30]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.260ns  (logic 0.209ns (80.352%)  route 0.051ns (19.648%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X86Y11         FDCE                         0.000     0.000 r  neorv32_inst/io_system.neorv32_sysinfo_enabled.neorv32_sysinfo_inst/sysinfo_reg[0][30]/C
+    SLICE_X86Y11         FDCE (Prop_fdce_C_Q)         0.164     0.164 r  neorv32_inst/io_system.neorv32_sysinfo_enabled.neorv32_sysinfo_inst/sysinfo_reg[0][30]/Q
+                         net (fo=1, routed)           0.051     0.215    neorv32_inst/io_system.neorv32_bus_io_switch_inst/response_reg_enabled.host_rsp_o_reg[data][31][30]
+    SLICE_X87Y11         LUT6 (Prop_lut6_I3_O)        0.045     0.260 r  neorv32_inst/io_system.neorv32_bus_io_switch_inst/response_reg_enabled.host_rsp_o[data][30]_i_1/O
+                         net (fo=1, routed)           0.000     0.260    neorv32_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/response_reg_enabled.host_rsp_o_reg[data][31]_0[30]
+    SLICE_X87Y11         FDCE                                         r  neorv32_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/response_reg_enabled.host_rsp_o_reg[data][30]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dbus_req_o_reg[data][4]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            neorv32_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/request_reg_enabled.device_req_o_reg[data][4]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.260ns  (logic 0.128ns (49.182%)  route 0.132ns (50.818%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X76Y11         FDCE                         0.000     0.000 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dbus_req_o_reg[data][4]/C
+    SLICE_X76Y11         FDCE (Prop_fdce_C_Q)         0.128     0.128 r  neorv32_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dbus_req_o_reg[data][4]/Q
+                         net (fo=2, routed)           0.132     0.260    neorv32_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/main_req_i[data][4]
+    SLICE_X76Y12         FDCE                                         r  neorv32_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/request_reg_enabled.device_req_o_reg[data][4]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 neorv32_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/rx_engine_reg[sreg][5]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            neorv32_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/rx_engine_fifo_inst/memory_no_reset.fifo_write_noreset_small.fifo_reg_reg[5]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.260ns  (logic 0.128ns (49.182%)  route 0.132ns (50.818%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y3          FDCE                         0.000     0.000 r  neorv32_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/rx_engine_reg[sreg][5]/C
+    SLICE_X84Y3          FDCE (Prop_fdce_C_Q)         0.128     0.128 r  neorv32_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/rx_engine_reg[sreg][5]/Q
+                         net (fo=2, routed)           0.132     0.260    neorv32_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/rx_engine_fifo_inst/Q[5]
+    SLICE_X84Y4          FDRE                                         r  neorv32_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/rx_engine_fifo_inst/memory_no_reset.fifo_write_noreset_small.fifo_reg_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+

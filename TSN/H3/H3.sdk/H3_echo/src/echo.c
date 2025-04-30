@@ -79,17 +79,22 @@ err_t recv_callback(void *arg, struct tcp_pcb *tpcb,
 	sample=p->payload;
 	for (i=0; i < p->len; i++)
 	{
-		if (sample == "0"){
+		xil_printf("%d\n\r", *sample);
+		if (*sample == 48){  // 0
 			AUDIO_IP_mWriteReg(XPAR_AUDIOCODEC_S00_AXI_BASEADDR, AUDIO_IP_S00_AXI_SLV_REG0_OFFSET, 0);
+			xil_printf("filter 0 selected!\n\r");
 		}
-		else if (sample == "1"){
+		else if (*sample == 49){ // 1
 			AUDIO_IP_mWriteReg(XPAR_AUDIOCODEC_S00_AXI_BASEADDR, AUDIO_IP_S00_AXI_SLV_REG0_OFFSET, 1);
+			xil_printf("filter 1 selected!\n\r");
 		}
-		else if (sample == "2"){
+		else if (*sample == 50){ // 2
 			AUDIO_IP_mWriteReg(XPAR_AUDIOCODEC_S00_AXI_BASEADDR, AUDIO_IP_S00_AXI_SLV_REG0_OFFSET, 2);
+			xil_printf("filter 2 selected!\n\r");
 		}
-		else{
+		else if (*sample == 51){ // 3
 			AUDIO_IP_mWriteReg(XPAR_AUDIOCODEC_S00_AXI_BASEADDR, AUDIO_IP_S00_AXI_SLV_REG0_OFFSET, 3);
+			xil_printf("filter 3 selected!\n\r");
 		}
 		//AUDIO_IP_mWriteReg(XPAR_AUDIO_AXI_0_S00_AXI_BASEADDR, AUDIO_AXI_S00_AXI_SLV_REG4_OFFSET,*sample);
 		//xil_printf("Control word write reg 4= 1x%08x\n\r",*sample );

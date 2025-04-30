@@ -1,0 +1,813 @@
+/*
+
+Xilinx Vivado v2022.2 (64-bit) [Major: 2022, Minor: 2]
+SW Build: 3671981 on Fri Oct 14 04:59:54 MDT 2022
+IP Build: 3669848 on Fri Oct 14 08:30:02 MDT 2022
+
+Process ID (PID): 43641
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Apr 29 15:55:14 CEST 2025
+Time zone: 	Central European Standard Time (Europe/Madrid)
+
+OS: AlmaLinux release 8.7 (Stone Smilodon)
+OS Version: 4.18.0-425.19.2.el8_7.x86_64
+OS Architecture: amd64
+Available processors (cores): 24
+
+Display: 12.0
+Screen size: 1600x900
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	/home/asicdesign/eda/Xilinx/Vivado/2022.2/tps/lnx64/jre11.0.11_9
+Java executable: 	/home/asicdesign/eda/Xilinx/Vivado/2022.2/tps/lnx64/jre11.0.11_9/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m, -Xrs]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	labo1
+User home directory: /home/labo1
+User working directory: /home/labo1/vivado_2022_2_neorv32
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/asicdesign/eda/Xilinx/Vivado
+HDI_APPROOT: /eda/Xilinx/Vivado/2022.2
+RDI_DATADIR: /home/asicdesign/eda/Xilinx/Vivado/2022.2/data
+RDI_BINDIR: /home/asicdesign/eda/Xilinx/Vivado/2022.2/bin
+
+Vivado preferences file: /home/labo1/.Xilinx/Vivado/2022.2/vivado.xml
+Vivado preferences directory: /home/labo1/.Xilinx/Vivado/2022.2/
+Vivado layouts directory: /home/labo1/.Xilinx/Vivado/2022.2/data/layouts
+PlanAhead jar file: 	/home/asicdesign/eda/Xilinx/Vivado/2022.2/lib/classes/planAhead.jar
+Vivado log file: 	/home/labo1/vivado_2022_2_neorv32/vivado.log
+Vivado journal file: 	/home/labo1/vivado_2022_2_neorv32/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-43641-asictools
+
+Xilinx Environment Variables
+----------------------------
+RDI_APPROOT: /eda/Xilinx/Vivado/2022.2
+RDI_BASEROOT: /eda/Xilinx/Vivado
+RDI_BINROOT: /eda/Xilinx/Vivado/2022.2/bin
+RDI_BUILD: yes
+RDI_DATADIR: /eda/Xilinx/Vivado/2022.2/data
+RDI_INSTALLROOT: /eda/Xilinx
+RDI_INSTALLVER: 2022.2
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 11.0.11_9
+RDI_LIBDIR: /eda/Xilinx/Vivado/2022.2/lib/lnx64.o/Default:/eda/Xilinx/Vivado/2022.2/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /eda/Xilinx/Vivado/2022.2/ids_lite/ISE/bin/lin64
+RDI_PROG: /eda/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/vivado
+RDI_TPS_ROOT: /eda/Xilinx/Vivado/2022.2/tps/lnx64
+RDI_USE_JDK11: True
+VERDI_HOME: /eda/synopsys/2023-24/RHELx86/VERDI_2023.12/bin
+VIVADO_HOME: /eda/Xilinx/Vivado/2022.2/bin
+XILINX: /eda/Xilinx/Vivado/2022.2/ids_lite/ISE
+XILINX_DSP: /eda/Xilinx/Vivado/2022.2/ids_lite/ISE
+XILINX_HLS: /eda/Xilinx/Vitis_HLS/2022.2
+XILINX_PLANAHEAD: /eda/Xilinx/Vivado/2022.2
+XILINX_VITIS: 
+XILINX_VIVADO: /eda/Xilinx/Vivado/2022.2
+XILINX_VIVADO_HLS: /eda/Xilinx/Vivado/2022.2
+
+
+GUI allocated memory:	308 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,131 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,081 MB. GUI used memory: 56 MB. Current time: 4/29/25, 3:55:15 PM CEST
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create Project"); // u
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+selectButton("NEXT", "Next >"); // JButton
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "basic_riscv"); // Q
+selectCheckBox(PAResourceOtoP.ProjectNameChooser_CREATE_PROJECT_SUBDIRECTORY, "Create project subdirectory", false); // f: FALSE
+selectButton("NEXT", "Next >"); // JButton
+// [GUI Memory]: 103 MB (+105892kb) [00:00:55]
+// [Engine Memory]: 1,091 MB (+992832kb) [00:00:55]
+selectButton("NEXT", "Next >"); // JButton
+// Elapsed time: 12 seconds
+selectComboBox(PAResourceEtoH.FPGAChooser_FAMILY, "Zynq-7000", 10); // l.a
+selectComboBox(PAResourceEtoH.FPGAChooser_PACKAGE, "clg484", 3); // l.a
+selectComboBox(PAResourceEtoH.FPGAChooser_SPEED, "-1", 1); // l.a
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7z020clg484-1 ; 484 ; 200 ; 53200 ; 106400 ; 140 ; 0 ; 220 ;  ; 32 ;  ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 1, "xc7z020clg484-1", 0); // n
+// Elapsed time: 12 seconds
+selectButton("NEXT", "Next >"); // JButton
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,151 MB (+5304kb) [00:01:35]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project basic_riscv . -part xc7z020clg484-1 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/Xilinx/Vivado/2022.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 118 MB (+9421kb) [00:01:36]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 55 seconds
+dismissDialog("Create Project"); // bq
+dismissDialog("New Project"); // f
+// HMemoryUtils.trashcanNow. Engine heap size: 1,223 MB. GUI used memory: 61 MB. Current time: 4/29/25, 3:56:45 PM CEST
+// [Engine Memory]: 1,223 MB (+15255kb) [00:01:38]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// Elapsed time: 104 seconds
+setFileChooser("/home/labo1/neorv32/rtl/processor_templates/neorv32_ProcessorTop_Minimal.vhd");
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 113 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse /home/labo1/neorv32/rtl/processor_templates/neorv32_ProcessorTop_Minimal.vhd 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,246 MB. GUI used memory: 62 MB. Current time: 4/29/25, 3:58:55 PM CEST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 127 seconds
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 116, 128); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 199, 129); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 164, 126); // ac
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd)]", 1, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+setFileChooser("/home/labo1/neorv32/rtl/core/neorv32_top.vhd");
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 16 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse /home/labo1/neorv32/rtl/core/neorv32_top.vhd 
+// [GUI Memory]: 133 MB (+10530kb) [00:06:35]
+// [Engine Memory]: 1,295 MB (+11568kb) [00:06:36]
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,300 MB. GUI used memory: 65 MB. Current time: 4/29/25, 4:01:45 PM CEST
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd), neorv32_inst : neorv32.neorv32_top]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd), neorv32_inst : neorv32.neorv32_top]", 2, false); // D
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, neorv32_top.vhd]", 3, false); // D
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 171, 20); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 162, 24); // ac
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, neorv32_top.vhd]", 3, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_SET_LIBRARY, "Set Library..."); // ao
+setText(PAResourceQtoS.SpecifyLibraryDialog_LIBRARY_NAME, "neorv32"); // d.c
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Set Library"); // M
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property library neorv32 [get_files  /home/labo1/neorv32/rtl/core/neorv32_top.vhd] 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,317 MB. GUI used memory: 65 MB. Current time: 4/29/25, 4:02:30 PM CEST
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, neorv32]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, neorv32]", 2, true); // D - Node
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd), neorv32_inst : neorv32_top(neorv32_top_rtl) (neorv32_top.vhd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd), neorv32_inst : neorv32_top(neorv32_top_rtl) (neorv32_top.vhd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd), neorv32_inst : neorv32_top(neorv32_top_rtl) (neorv32_top.vhd), soc_generators.neorv32_sys_clock_inst : neorv32.neorv32_sys_clock]", 4, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd)]", 1, true); // D - Node
+// Elapsed time: 14 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+dismissFileChooser();
+selectButton("CANCEL", "Cancel"); // JButton
+// 'f' command handler elapsed time: 11 seconds
+dismissDialog("Add Sources"); // c
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd), neorv32_inst : neorv32_top(neorv32_top_rtl) (neorv32_top.vhd)]", 2, true); // D - Node
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 2); // g
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib]", 4, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, neorv32_ProcessorTop_Minimal.vhd]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, neorv32_ProcessorTop_Minimal.vhd]", 5, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_SET_LIBRARY, "Set Library..."); // ao
+// Elapsed time: 10 seconds
+dismissDialog("Set Library"); // M
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, neorv32, neorv32_top.vhd]", 3, false); // D
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd), neorv32_inst : neorv32_top(neorv32_top_rtl) (neorv32_top.vhd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd), neorv32_inst : neorv32_top(neorv32_top_rtl) (neorv32_top.vhd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+floatFrame(PAResourceOtoP.PAViews_CODE, "neorv32_top.vhd"); // R
+// PAResourceOtoP.PAViews_CODE: Code: float view
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "neorv32_top.vhd"); // R
+// Elapsed time: 66 seconds
+selectCodeEditor("neorv32_top.vhd", 71, 417); // ac
+selectCodeEditor("neorv32_top.vhd", 74, 437); // ac
+selectCodeEditor("neorv32_top.vhd", 78, 455); // ac
+// Elapsed time: 20 seconds
+selectCodeEditor("neorv32_top.vhd", 122, 513); // ac
+selectCodeEditor("neorv32_top.vhd", 128, 502); // ac
+selectCodeEditor("neorv32_top.vhd", 470, 502); // ac
+// Elapsed time: 10 seconds
+selectCodeEditor("neorv32_top.vhd", 673, 260); // ac
+// Elapsed time: 37 seconds
+selectCodeEditor("neorv32_top.vhd", 31, 533); // ac
+selectCodeEditor("neorv32_top.vhd", 112, 532); // ac
+selectCodeEditor("neorv32_top.vhd", 1090, 521); // ac
+selectCodeEditor("neorv32_top.vhd", 1080, 534); // ac
+selectCodeEditor("neorv32_top.vhd", 1080, 534); // ac
+selectCodeEditor("neorv32_top.vhd", 102, 530, false, false, false, true, false); // ac - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ao
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 823, 384); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 711, 161); // ac
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'v'); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 56, 170); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 258, 157); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 180, 174); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 447, 172); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 417, 172); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 439, 171); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 109, 174); // ac
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'c'); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 840, 489); // ac
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'v'); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 344, 486); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 348, 485); // ac
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'c'); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 242, 515); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 240, 499); // ac
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'v'); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 110, 504); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 112, 500); // ac
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'c'); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 341, 502); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 346, 502); // ac
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'v'); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 334, 499); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 441, 133); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 424, 168); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 386, 174); // ac
+// Elapsed time: 27 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // R
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd), neorv32_inst : neorv32_top(neorv32_top_rtl) (neorv32_top.vhd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd), neorv32_inst : neorv32_top(neorv32_top_rtl) (neorv32_top.vhd), soc_generators.neorv32_sys_clock_inst : neorv32.neorv32_sys_clock]", 4, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd), neorv32_inst : neorv32_top(neorv32_top_rtl) (neorv32_top.vhd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd), neorv32_inst : neorv32_top(neorv32_top_rtl) (neorv32_top.vhd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 12 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_UNSELECT_TYPE, "Unselect Type"); // al
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // ag
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ag
+selectMenuItem(RDIResourceCommand.RDICommands_RESET_LAYOUT, "Reset Layout"); // ao
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ag
+// Run Command: RDIResourceCommand.RDICommands_RESET_LAYOUT
+dockFrame(PAResourceOtoP.PAViews_CODE, "neorv32_top.vhd"); // R
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "neorv32_top.vhd"); // R
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "neorv32_top.vhd", 2); // o
+// Elapsed time: 10 seconds
+selectCodeEditor("neorv32_top.vhd", 1, 126); // ac
+selectCodeEditor("neorv32_top.vhd", 114, 135, false, false, false, true, false); // ac - Popup Trigger
+selectCodeEditor("neorv32_top.vhd", 53, 119); // ac
+selectCodeEditor("neorv32_top.vhd", 3, 107); // ac
+selectCodeEditor("neorv32_top.vhd", 60, 140, false, false, false, true, false); // ac - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // ao
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 1); // o
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 456, 140); // ac
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'v'); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 310, 187); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 301, 193); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 415, 230); // ac
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'v'); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 305, 164); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 344, 199); // ac
+floatFrame(PAResourceOtoP.PAViews_CODE, "neorv32_ProcessorTop_Minimal.vhd *"); // R
+// PAResourceOtoP.PAViews_CODE: Code: float view
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "neorv32_ProcessorTop_Minimal.vhd *"); // R
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 179, 511); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 307, 607); // ac
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'v'); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 165, 608); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 171, 607); // ac
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'c'); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 265, 634); // ac
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'v'); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 305, 656); // ac
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'v'); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 105, 640); // ac
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'c'); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 219, 641); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 219, 639); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 157, 639); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 158, 637); // ac
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'v'); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 106, 652); // ac
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'c'); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 219, 653); // ac
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'v'); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 243, 652); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 53, 667); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 79, 560); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 79, 580); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 75, 607); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 132, 637); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 133, 651); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 248, 653); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 157, 682); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 149, 667); // ac
+// Elapsed time: 14 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 68 MB. Current time: 4/29/25, 4:11:05 PM CEST
+// Elapsed time: 17 seconds
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 110, 143); // ac
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'c'); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 241, 589); // ac
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'v'); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 510, 590); // ac
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,362 MB (+2408kb) [00:16:24]
+// Elapsed time: 19 seconds
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 519, 246); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 520, 239); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 520, 246); // ac
+// Elapsed time: 10 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+dockFrame(PAResourceOtoP.PAViews_CODE, "neorv32_ProcessorTop_Minimal.vhd"); // R
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "neorv32_ProcessorTop_Minimal.vhd"); // R
+// PAResourceOtoP.PAViews_CODE: Code: dock view
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "neorv32_top.vhd", 1); // o
+// HMemoryUtils.trashcanNow. Engine heap size: 1,379 MB. GUI used memory: 68 MB. Current time: 4/29/25, 4:12:05 PM CEST
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("neorv32_top.vhd", 135, 159); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "neorv32_top.vhd", 1); // o
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 201, 141); // ac
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd), neorv32_inst : neorv32_top(neorv32_top_rtl) (neorv32_top.vhd)]", 2); // D
+// Elapsed time: 208 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// Elapsed time: 24 seconds
+dismissFileChooser();
+// 'f' command handler elapsed time: 29 seconds
+dismissDialog("Add Sources"); // c
+// Elapsed time: 49 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd), neorv32_inst : neorv32_top(neorv32_top_rtl) (neorv32_top.vhd)]", 2, true); // D - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,381 MB. GUI used memory: 67 MB. Current time: 4/29/25, 4:42:05 PM CEST
+// Elapsed time: 2213 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories"); // a
+setFolderChooser("/home/labo1/neorv32/rtl/core");
+selectButton("BACK", "< Back"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// Elapsed time: 13 seconds
+String[] filenames31467 = {"/home/labo1/neorv32/rtl/core/neorv32_application_image.vhd", "/home/labo1/neorv32/rtl/core/neorv32_boot_rom.vhd", "/home/labo1/neorv32/rtl/core/neorv32_bootloader_image.vhd", "/home/labo1/neorv32/rtl/core/neorv32_bus.vhd", "/home/labo1/neorv32/rtl/core/neorv32_cache.vhd", "/home/labo1/neorv32/rtl/core/neorv32_cfs.vhd", "/home/labo1/neorv32/rtl/core/neorv32_clint.vhd", "/home/labo1/neorv32/rtl/core/neorv32_cpu.vhd", "/home/labo1/neorv32/rtl/core/neorv32_cpu_alu.vhd", "/home/labo1/neorv32/rtl/core/neorv32_cpu_control.vhd", "/home/labo1/neorv32/rtl/core/neorv32_cpu_counters.vhd", "/home/labo1/neorv32/rtl/core/neorv32_cpu_cp_bitmanip.vhd", "/home/labo1/neorv32/rtl/core/neorv32_cpu_cp_cfu.vhd", "/home/labo1/neorv32/rtl/core/neorv32_cpu_cp_cond.vhd", "/home/labo1/neorv32/rtl/core/neorv32_cpu_cp_crypto.vhd", "/home/labo1/neorv32/rtl/core/neorv32_cpu_cp_fpu.vhd", "/home/labo1/neorv32/rtl/core/neorv32_cpu_cp_muldiv.vhd", "/home/labo1/neorv32/rtl/core/neorv32_cpu_cp_shifter.vhd", "/home/labo1/neorv32/rtl/core/neorv32_cpu_decompressor.vhd", "/home/labo1/neorv32/rtl/core/neorv32_cpu_frontend.vhd", "/home/labo1/neorv32/rtl/core/neorv32_cpu_icc.vhd", "/home/labo1/neorv32/rtl/core/neorv32_cpu_lsu.vhd", "/home/labo1/neorv32/rtl/core/neorv32_cpu_pmp.vhd", "/home/labo1/neorv32/rtl/core/neorv32_cpu_regfile.vhd", "/home/labo1/neorv32/rtl/core/neorv32_crc.vhd", "/home/labo1/neorv32/rtl/core/neorv32_debug_auth.vhd", "/home/labo1/neorv32/rtl/core/neorv32_debug_dm.vhd", "/home/labo1/neorv32/rtl/core/neorv32_debug_dtm.vhd", "/home/labo1/neorv32/rtl/core/neorv32_dma.vhd", "/home/labo1/neorv32/rtl/core/neorv32_dmem.vhd", "/home/labo1/neorv32/rtl/core/neorv32_fifo.vhd", "/home/labo1/neorv32/rtl/core/neorv32_gpio.vhd", "/home/labo1/neorv32/rtl/core/neorv32_gptmr.vhd", "/home/labo1/neorv32/rtl/core/neorv32_hwspinlock.vhd", "/home/labo1/neorv32/rtl/core/neorv32_imem.vhd", "/home/labo1/neorv32/rtl/core/neorv32_neoled.vhd", "/home/labo1/neorv32/rtl/core/neorv32_onewire.vhd", "/home/labo1/neorv32/rtl/core/neorv32_package.vhd", "/home/labo1/neorv32/rtl/core/neorv32_pwm.vhd", "/home/labo1/neorv32/rtl/core/neorv32_sdi.vhd", "/home/labo1/neorv32/rtl/core/neorv32_slink.vhd", "/home/labo1/neorv32/rtl/core/neorv32_spi.vhd", "/home/labo1/neorv32/rtl/core/neorv32_sys.vhd", "/home/labo1/neorv32/rtl/core/neorv32_sysinfo.vhd", "/home/labo1/neorv32/rtl/core/neorv32_top.vhd", "/home/labo1/neorv32/rtl/core/neorv32_trng.vhd", "/home/labo1/neorv32/rtl/core/neorv32_twd.vhd", "/home/labo1/neorv32/rtl/core/neorv32_twi.vhd", "/home/labo1/neorv32/rtl/core/neorv32_uart.vhd", "/home/labo1/neorv32/rtl/core/neorv32_wdt.vhd", "/home/labo1/neorv32/rtl/core/neorv32_xbus.vhd"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 28 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g
+// HMemoryUtils.trashcanNow. Engine heap size: 1,414 MB. GUI used memory: 60 MB. Current time: 4/29/25, 4:54:50 PM CEST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, neorv32_ProcessorTop_Minimal.vhd]", 31, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, neorv32_boot_rom.vhd]", 5, false, true, false, false, false, false); // D - Shift Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, neorv32_boot_rom.vhd]", 5, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_SET_LIBRARY, "Set Library..."); // ao
+selectComboBox(PAResourceQtoS.SpecifyLibraryDialog_LIBRARY_NAME, "neorv32", 0); // u
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Set Library"); // M
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g
+// [Engine Memory]: 1,431 MB (+5kb) [00:59:54]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,439 MB. GUI used memory: 60 MB. Current time: 4/29/25, 4:55:10 PM CEST
+// Elapsed time: 18 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced]", 32); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced]", 32); // D
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// Elapsed time: 38 seconds
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// Elapsed time: 61 seconds
+dismissFileChooser();
+selectButton("CANCEL", "Cancel"); // JButton
+// 'f' command handler elapsed time: 110 seconds
+dismissDialog("Add Sources"); // c
+// Elapsed time: 29 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced]", 32); // D
+// Elapsed time: 11 seconds
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // R
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_sys_reset(neorv32_sys_reset_rtl) (neorv32_sys.vhd)]", 51, false); // D
+selectButton((HResource) null, "Sources_settings"); // v: TRUE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd), neorv32_inst : neorv32_top(neorv32_top_rtl) (neorv32_top.vhd), memory_system.neorv32_int_dmem_enabled.neorv32_int_dmem_inst : neorv32.neorv32_dmem]", 7, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Refresh Hierarchy"); // ao
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, neorv32_uart.vhd]", 34, false); // D
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_sys_reset(neorv32_sys_reset_rtl) (neorv32_sys.vhd)]", 51, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_sys_reset(neorv32_sys_reset_rtl) (neorv32_sys.vhd)]", 51, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_sys_reset(neorv32_sys_reset_rtl) (neorv32_sys.vhd)]", 51, false, false, false, false, false, true); // D - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_sys_reset(neorv32_sys_reset_rtl) (neorv32_sys.vhd)]", 51, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_sys_reset(neorv32_sys_reset_rtl) (neorv32_sys.vhd)]", 51, false, false, false, false, false, true); // D - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,459 MB. GUI used memory: 61 MB. Current time: 4/29/25, 4:59:55 PM CEST
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+// Elapsed time: 14 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // R
+// Elapsed time: 10 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced]", 32); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced]", 32); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, neorv32_cpu_lsu.vhd]", 33, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, neorv32_sysinfo.vhd]", 56, false, true, false, false, false, false); // D - Shift Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, neorv32_sys.vhd]", 52, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_SET_LIBRARY, "Set Library..."); // ao
+selectComboBox(PAResourceQtoS.SpecifyLibraryDialog_LIBRARY_NAME, "neorv32", 0); // u
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Set Library"); // M
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g
+// HMemoryUtils.trashcanNow. Engine heap size: 1,491 MB. GUI used memory: 61 MB. Current time: 4/29/25, 5:01:00 PM CEST
+unMaximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // R
+// Elapsed time: 467 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a
+dismissFileChooser();
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE, "Create File"); // a
+// Tcl Command: 'file mkdir /home/labo1/vivado_2022_2_neorv32/basic_riscv.srcs/constrs_1'
+// Tcl Message: file mkdir /home/labo1/vivado_2022_2_neorv32/basic_riscv.srcs/constrs_1 
+// Elapsed time: 15 seconds
+setText(PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, "constraints"); // Q
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Constraints File"); // u
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 22 seconds
+// Tcl Command: 'file mkdir /home/labo1/vivado_2022_2_neorv32/basic_riscv.srcs/constrs_1/new'
+dismissDialog("Add Sources"); // c
+// Tcl Message: file mkdir /home/labo1/vivado_2022_2_neorv32/basic_riscv.srcs/constrs_1/new 
+// Tcl Message: close [ open /home/labo1/vivado_2022_2_neorv32/basic_riscv.srcs/constrs_1/new/constraints.xdc w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 /home/labo1/vivado_2022_2_neorv32/basic_riscv.srcs/constrs_1/new/constraints.xdc 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, constraints.xdc]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, constraints.xdc]", 3, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("constraints.xdc", 187, 39); // ac
+typeControlKey((HResource) null, "constraints.xdc", 'v'); // ac
+selectCodeEditor("constraints.xdc", 187, 39); // ac
+typeControlKey((HResource) null, "constraints.xdc", 'v'); // ac
+typeControlKey((HResource) null, "constraints.xdc", 'v'); // ac
+typeControlKey((HResource) null, "constraints.xdc", 'v'); // ac
+selectCodeEditor("constraints.xdc", 100, 17); // ac
+// Elapsed time: 15 seconds
+selectCodeEditor("constraints.xdc", 230, 39); // ac
+selectCodeEditor("constraints.xdc", 85, 13, false, false, false, true, false); // ac - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ao
+// Elapsed time: 29 seconds
+selectCodeEditor("constraints.xdc", 170, 64); // ac
+typeControlKey((HResource) null, "constraints.xdc", 'v'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 1); // o
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 2); // o
+selectCodeEditor("constraints.xdc", 9, 186); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 1); // o
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 41, 159); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 41, 159, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'c'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 2); // o
+selectCodeEditor("constraints.xdc", 299, 193); // ac
+selectCodeEditor("constraints.xdc", 299, 193, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "constraints.xdc", 'v'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 1); // o
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 58, 176); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 58, 176, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'c'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 2); // o
+selectCodeEditor("constraints.xdc", 340, 253); // ac
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "btn"); // d.c
+// Elapsed time: 285 seconds
+selectCodeEditor("constraints.xdc", 9, 264); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 1); // o
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 63, 234); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 63, 234, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'c'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 2); // o
+selectCodeEditor("constraints.xdc", 309, 267); // ac
+selectCodeEditor("constraints.xdc", 309, 267, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "constraints.xdc", 'v'); // ac
+selectCodeEditor("constraints.xdc", 314, 282, false, true, false, false, false); // ac - Control Key
+selectCodeEditor("constraints.xdc", 314, 282, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "constraints.xdc", 'v'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 1); // o
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 85, 251); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 85, 251, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'c'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 2); // o
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 2, false, true); // o - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L
+selectCodeEditor("constraints.xdc", 325, 280); // ac
+selectCodeEditor("constraints.xdc", 325, 280, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "constraints.xdc", 'v'); // ac
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "btn"); // d.c
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 1); // o
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 39, 173); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 39, 173, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'c'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 2); // o
+selectCodeEditor("constraints.xdc", 311, 369); // ac
+selectCodeEditor("constraints.xdc", 311, 369, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "constraints.xdc", 'v'); // ac
+selectCodeEditor("constraints.xdc", 7, 367); // ac
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 1); // o
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 45, 208); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 45, 208, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "neorv32_ProcessorTop_Minimal.vhd", 'c'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 2); // o
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "led", true); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "led"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "led"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "led"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "led"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "led"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "led"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "led"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "led"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "led"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "led"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "led"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "led"); // d.c
+selectCodeEditor("constraints.xdc", 12, 129); // ac
+selectCodeEditor("constraints.xdc", 223, 259); // ac
+selectCodeEditor("constraints.xdc", 303, 126); // ac
+selectCodeEditor("constraints.xdc", 303, 126, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "constraints.xdc", 'v'); // ac
+selectCodeEditor("constraints.xdc", 297, 140); // ac
+selectCodeEditor("constraints.xdc", 297, 140, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "constraints.xdc", 'v'); // ac
+selectCodeEditor("constraints.xdc", 300, 157); // ac
+selectCodeEditor("constraints.xdc", 300, 157, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "constraints.xdc", 'v'); // ac
+selectCodeEditor("constraints.xdc", 301, 173); // ac
+selectCodeEditor("constraints.xdc", 301, 173, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "constraints.xdc", 'v'); // ac
+selectCodeEditor("constraints.xdc", 324, 128); // ac
+selectCodeEditor("constraints.xdc", 337, 127); // ac
+typeControlKey((HResource) null, "constraints.xdc", 'c'); // ac
+selectCodeEditor("constraints.xdc", 325, 128); // ac
+typeControlKey((HResource) null, "constraints.xdc", 'v'); // ac
+selectCodeEditor("constraints.xdc", 213, 128); // ac
+typeControlKey((HResource) null, "constraints.xdc", 'c'); // ac
+selectCodeEditor("constraints.xdc", 322, 129); // ac
+typeControlKey((HResource) null, "constraints.xdc", 'v'); // ac
+typeControlKey((HResource) null, "constraints.xdc", 'c'); // ac
+selectCodeEditor("constraints.xdc", 305, 145); // ac
+selectCodeEditor("constraints.xdc", 305, 145, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "constraints.xdc", 'v'); // ac
+selectCodeEditor("constraints.xdc", 313, 153); // ac
+selectCodeEditor("constraints.xdc", 313, 153, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "constraints.xdc", 'v'); // ac
+selectCodeEditor("constraints.xdc", 310, 172); // ac
+selectCodeEditor("constraints.xdc", 310, 172, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "constraints.xdc", 'v'); // ac
+selectCodeEditor("constraints.xdc", 339, 142); // ac
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("No Implementation Results Available"); // u
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cz
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Tue Apr 29 17:17:31 2025] Launched synth_1... Run output will be captured here: /home/labo1/vivado_2022_2_neorv32/basic_riscv.runs/synth_1/runme.log [Tue Apr 29 17:17:31 2025] Launched impl_1... Run output will be captured here: /home/labo1/vivado_2022_2_neorv32/basic_riscv.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 90 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, null, -1); // f
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, null, -1); // f
+// Elapsed time: 52 seconds
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // f: FALSE
+// [Engine Memory]: 1,502 MB (+155kb) [01:24:58]
+// Elapsed time: 46 seconds
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // j
+// Elapsed time: 92 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton("OptionPane.button", "Cancel"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false, false, false, false, true, false); // f - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_BITSTREAM_SETTINGS, "Bitstream Settings..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_BITSTREAM_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,547 MB. GUI used memory: 87 MB. Current time: 4/29/25, 5:22:25 PM CEST
+dismissDialog("Settings"); // d
+// [GUI Memory]: 142 MB (+1631kb) [01:27:21]
+// Elapsed time: 17 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, neorv32_ProcessorTop_Minimal(neorv32_ProcessorTop_Minimal_rtl) (neorv32_ProcessorTop_Minimal.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// [GUI Memory]: 161 MB (+12817kb) [01:27:37]
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 566, 108); // ac
+// Elapsed time: 35 seconds
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 254, 113); // ac
+// Elapsed time: 10 seconds
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 267, 112); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 269, 118); // ac
+selectCodeEditor("neorv32_ProcessorTop_Minimal.vhd", 294, 145); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1160] Copying file /home/labo1/vivado_2022_2_neorv32/basic_riscv.runs/synth_1/neorv32_ProcessorTop_Minimal.dcp to /home/labo1/vivado_2022_2_neorv32/basic_riscv.srcs/utils_1/imports/synth_1 and adding it to utils fileset 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cz
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Tue Apr 29 17:23:53 2025] Launched synth_1... Run output will be captured here: /home/labo1/vivado_2022_2_neorv32/basic_riscv.runs/synth_1/runme.log [Tue Apr 29 17:23:53 2025] Launched impl_1... Run output will be captured here: /home/labo1/vivado_2022_2_neorv32/basic_riscv.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 90 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,626 MB. GUI used memory: 86 MB. Current time: 4/29/25, 5:25:25 PM CEST
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,469 MB. GUI used memory: 85 MB. Current time: 4/29/25, 5:25:31 PM CEST
+// [Engine Memory]: 2,469 MB (+935040kb) [01:30:23]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 2,657 MB (+67299kb) [01:30:24]
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  1398 ms.
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg484-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7300.609 ; gain = 0.000 ; free physical = 80906 ; free virtual = 126362 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 141 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2022.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF Files: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.13 . Memory (MB): peak = 7923.086 ; gain = 2.000 ; free physical = 80728 ; free virtual = 126146 
+// Tcl Message: Restored from archive | CPU: 0.140000 secs | Memory: 3.503433 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.13 . Memory (MB): peak = 7923.086 ; gain = 2.000 ; free physical = 80728 ; free virtual = 126147 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7923.086 ; gain = 0.000 ; free physical = 80728 ; free virtual = 126146 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 6 instances were transformed.   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// Tcl Message: open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 8185.633 ; gain = 1140.816 ; free physical = 80493 ; free virtual = 125916 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 171 MB (+1575kb) [01:30:26]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dD' command handler elapsed time: 11 seconds
+// Elapsed time: 11 seconds
+dismissDialog("Open Implemented Design"); // bq
+// [GUI Memory]: 192 MB (+13491kb) [01:30:28]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Methodology Violations"); // aO
+// Elapsed time: 133 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // j
+closeTask("Implementation", "Implemented Design", "DesignTask.RESULTS_ANALYSIS");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Confirm Close"); // u
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,704 MB. GUI used memory: 114 MB. Current time: 4/29/25, 5:27:56 PM CEST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,704 MB. GUI used memory: 114 MB. Current time: 4/29/25, 5:27:56 PM CEST
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bq
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 31); // f
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 31); // f

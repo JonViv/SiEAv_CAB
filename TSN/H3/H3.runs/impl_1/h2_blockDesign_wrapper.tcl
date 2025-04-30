@@ -69,19 +69,19 @@ set rc [catch {
   set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir E:/CAB/TSN/H3/H3.cache/wt [current_project]
-  set_property parent.project_path E:/CAB/TSN/H3/H3.xpr [current_project]
-  set_property ip_repo_paths E:/CAB/TSN/audio_ip [current_project]
+  set_property webtalk.parent_dir D:/CAB/TSN/H3/H3.cache/wt [current_project]
+  set_property parent.project_path D:/CAB/TSN/H3/H3.xpr [current_project]
+  set_property ip_repo_paths D:/CAB/TSN/audio_ip [current_project]
   update_ip_catalog
-  set_property ip_output_repo E:/CAB/TSN/H3/H3.cache/ip [current_project]
+  set_property ip_output_repo D:/CAB/TSN/H3/H3.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet E:/CAB/TSN/H3/H3.runs/synth_1/h2_blockDesign_wrapper.dcp
+  add_files -quiet D:/CAB/TSN/H3/H3.runs/synth_1/h2_blockDesign_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files E:/CAB/TSN/H3/H3.srcs/sources_1/bd/h2_blockDesign/h2_blockDesign.bd
+  add_files D:/CAB/TSN/H3/H3.srcs/sources_1/bd/h2_blockDesign/h2_blockDesign.bd
   set_param project.isImplRun false
-  read_xdc E:/CAB/TSN/H3/H3.srcs/constrs_1/imports/new/constraints.xdc
+  read_xdc D:/CAB/TSN/H3/H3.srcs/constrs_1/imports/new/constraints.xdc
   set_param project.isImplRun true
   link_design -top h2_blockDesign_wrapper -part xc7z020clg484-1
   set_param project.isImplRun false
